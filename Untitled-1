@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Multi-Page Website</title>
+    <style>
+        nav {
+            background-color: #333;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        img {
+            width: 600px;
+            height: 400px;
+            border: 2px solid black;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        tr:nth-child(odd) {
+            background-color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <!-- Home Page -->
+    <div id="home">
+        <header>
+            <h1>Welcome to My Website</h1>
+        </header>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <main>
+            <h2>Home Page</h2>
+            <video width="600" height="400" controls>
+                <source src="sample-video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div>
+                <img src="image1.jpg" alt="Image 1">
+                <img src="image2.jpg" alt="Image 2">
+                <img src="image3.jpg" alt="Image 3">
+            </div>
+        </main>
+    </div>
+
+    <!-- About Page -->
+    <div id="about">
+        <header>
+            <h1>About Us</h1>
+        </header>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <main>
+            <h2>About Page</h2>
+            <table>
+                <tr>
+                    <th>Friend's Name</th>
+                    <th>Contact</th>
+                    <th>Address</th>
+                </tr>
+                <tr>
+                    <td>John Doe</td>
+                    <td>123-456-7890</td>
+                    <td>123 Main Street</td>
+                </tr>
+                <tr>
+                    <td>Jane Smith</td>
+                    <td>987-654-3210</td>
+                    <td>456 Maple Avenue</td>
+                </tr>
+                <tr>
+                    <td>Mark Wilson</td>
+                    <td>555-555-5555</td>
+                    <td>789 Oak Lane</td>
+                </tr>
+                <tr>
+                    <td>Emily Johnson</td>
+                    <td>111-222-3333</td>
+                    <td>101 Pine Street</td>
+                </tr>
+                <tr>
+                    <td>Chris Brown</td>
+                    <td>444-333-2222</td>
+                    <td>202 Elm Street</td>
+                </tr>
+            </table>
+            <h3>Favorite Movies</h3>
+            <ul>
+                <li>Inception</li>
+                <li>The Dark Knight</li>
+                <li>Interstellar</li>
+                <li>Avengers: Endgame</li>
+                <li>The Matrix</li>
+                <li>Parasite</li>
+                <li>Forrest Gump</li>
+                <li>Gladiator</li>
+                <li>The Shawshank Redemption</li>
+                <li>Fight Club</li>
+            </ul>
+        </main>
+    </div>
+
+    <!-- Favorite Movies Page -->
+    <div id="favorite-movies">
+        <header>
+            <h1>Favorite Movies</h1>
+        </header>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <main>
+            <h2>Favorite Movies List</h2>
+            <ul>
+                <li><a href="https://www.imdb.com/title/tt1375666/"><img src="inception.jpg" alt="Inception"></a></li>
+                <li><a href="https://www.imdb.com/title/tt0468569/"><img src="dark-knight.jpg" alt="The Dark Knight"></a></li>
+                <li><a href="https://www.imdb.com/title/tt0816692/"><img src="interstellar.jpg" alt="Interstellar"></a></li>
+                <li><a href="https://www.imdb.com/title/tt4154796/"><img src="endgame.jpg" alt="Avengers: Endgame"></a></li>
+                <li><a href="https://www.imdb.com/title/tt0133093/"><img src="matrix.jpg" alt="The Matrix"></a></li>
+            </ul>
+        </main>
+    </div>
+
+    <!-- Favorite Books Page -->
+    <div id="favorite-books">
+        <header>
+            <h1>Favorite Books</h1>
+        </header>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <main>
+            <h2>Books</h2>
+            <table>
+                <tr>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>Publication Year</th>
+                </tr>
+                <tr>
+                    <td>1984</td>
+                    <td>George Orwell</td>
+                    <td>1949</td>
+                </tr>
+                <tr>
+                    <td>To Kill a Mockingbird</td>
+                    <td>Harper Lee</td>
+                    <td>1960</td>
+                </tr>
+                <tr>
+                    <td>The Great Gatsby</td>
+                    <td>F. Scott Fitzgerald</td>
+                    <td>1925</td>
+                </tr>
+                <tr>
+                    <td>Pride and Prejudice</td>
+                    <td>Jane Austen</td>
+                    <td>1813</td>
+                </tr>
+                <tr>
+                    <td>The Catcher in the Rye</td>
+                    <td>J.D. Salinger</td>
+                    <td>1951</td>
+                </tr>
+            </table>
+        </main>
+    </div>
+</body>
+</html>
